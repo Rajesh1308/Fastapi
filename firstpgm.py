@@ -41,3 +41,9 @@ def get_item(Name: str):
         if inventory[item_id]["Name"] == Name:
             return inventory[item_id]
     return {"Data " : "Not found"}
+
+@app.get("/url-detect")
+def get_item(Name: str):
+    print(Name)
+
+    return {'URL ' : Name}
