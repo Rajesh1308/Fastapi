@@ -7,4 +7,4 @@ whois==0.9.27
 regex==2022.10.31
 googlesearch-python==1.1.0
 scikit-learn==1.0.2
-pickle==4.0
+pickle
