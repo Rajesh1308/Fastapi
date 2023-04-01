@@ -1,14 +1,11 @@
 
 from urllib.parse import urlparse,urlencode,parse_qs
-import urllib
 from bs4 import BeautifulSoup
 from googlesearch import search
-import ipaddress
 import requests
 import socket
 import re
 import pandas as pd
-import matplotlib.pyplot as plt
 import whois
 from datetime import datetime
 import time
