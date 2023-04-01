@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Path
-import test_rbf as trbf
 import pickle
 import Feature_extraction_new as feature
 
