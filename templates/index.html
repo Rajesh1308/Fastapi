@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analysis</title>
+
+    <style>
+        body{
+    background-color: rgb(234, 234, 156);
+}
+
+h1{
+    text-align: center;
+    color: rgb(220, 194, 25);
+    padding-top: 100px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(220, 194, 25);
+}
+
+h5{
+    text-align: center;
+    color: rgb(207, 22, 22);
+}
+
+.Name {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    align-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.label {
+    align-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(165, 153, 14);
+}
+
+.button {
+    align-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+    </style>
+
+</head>
+<body>
+    <h1>Matrix Hackathon</h1>
+    <h2>Legitimate and Phishing URL detection</h2>
+    
+    <form action="http://127.0.0.1:5000/url-detect?url=" method="GET">
+        <label class="label" for="testurl"> Enter the complete URL : </label>
+            <input class="input" type="text" id="Name" name="url" minlength="3" maxlength="100" required><br>
+        <button class="button" type="submit">Submit</button>  
+    </form>
+    <h5>Note : You are requested to submit a complete URL which should include the scheme (http or https) and the querys if present.
+               Submission of incomplete URL will cause Internal Server Error.
+    </h5>
+</body>
+</html>
